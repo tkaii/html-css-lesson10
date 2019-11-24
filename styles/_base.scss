@@ -1,0 +1,14 @@
+
+*, *:after, *:before {
+  box-sizing: $box-sizing;
+}
+
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: $font-size;
+  color: $text-color;
+  font-family: $font-family;
+}
+

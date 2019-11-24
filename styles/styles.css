@@ -1,0 +1,140 @@
+@charset "UTF-8";
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  color: #2B2D2D;
+  font-family: "遊ゴシック", "YuGothic", "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック"; }
+
+/* main */
+.form-wrapper {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 15px;
+  border: 1px solid #DEDEDE;
+  border-radius: 4px; }
+
+.fieldset {
+  margin-bottom: 1em!important; }
+
+textarea {
+  max-width: 100%;
+  resize: none; }
+
+label {
+  padding-top: 9px;
+  padding-bottom: 8px; }
+
+select {
+  height: 40px; }
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 1em; }
+
+.btn-submit {
+  background-color: #D9728E;
+  border-color: #D9728E;
+  color: #fff; }
+
+.btn-submit:hover {
+  background-color: #DF8BA2;
+  border-color: #DF8BA2;
+  color: #fff; }
+
+input[type=checkbox],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=radio],
+input[type=tel],
+input[type=text],
+select,
+textarea {
+  border: 1px solid #b9b9af;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1em; }
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+textarea {
+  width: 100%; }
+
+@media (min-width: 600px) {
+  label {
+    text-align: right;
+    margin-bottom: 5px; }
+
+  .fieldset {
+    display: flex;
+    align-items: center; }
+
+  .nowrap-field {
+    flex-wrap: nowrap; }
+
+  .submit-button-wrapper {
+    text-align: right; } }
+/* Grid */
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.row {
+  display: flex;
+  margin: 0 -15px;
+  /* グリッドを使わないコンテンツとグリッドを使うコンテンツとの位置を調整 */
+  flex-wrap: wrap; }
+
+.col-1 {
+  flex-basis: 16.67%; }
+
+.col-2 {
+  flex-basis: 33.33%; }
+
+.col-3 {
+  flex-basis: 50%; }
+
+.col-4 {
+  flex-basis: 66.67%; }
+
+.col-5 {
+  flex-basis: 83.33%; }
+
+.col-6 {
+  flex-basis: 100%; }
+
+@media (min-width: 600px) {
+  .col-lg-1 {
+    flex-basis: 16.67%; }
+
+  .col-lg-2 {
+    flex-basis: 33.33%; }
+
+  .col-lg-3 {
+    flex-basis: 50%; }
+
+  .col-lg-4 {
+    flex-basis: 66.67%; }
+
+  .col-lg-5 {
+    flex-basis: 83.33%; }
+
+  .col-lg-6 {
+    flex-basis: 100%; } }
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6 {
+  padding: 0 15px; }
+
+/*# sourceMappingURL=styles.css.map */

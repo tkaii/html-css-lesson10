@@ -1,0 +1,107 @@
+
+/* main */
+
+.form-wrapper {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: $padding;
+  border: $border;
+  border-radius: $border-radius;
+}
+
+.fieldset {
+  margin-bottom: 1em;
+}
+
+textarea {
+  max-width: $width;
+  resize: none;
+}
+
+label {
+  padding-top: 9px;
+  padding-bottom: 8px;
+}
+
+select {
+  height: 40px;
+}
+
+.btn {
+  padding: $btn-padding;
+  border-radius: $border-radius;
+  font-size: $btn-font-size;
+}
+
+.btn-submit {
+  background-color: $btn-bg-color;
+  border-color: $btn-bg-color;
+  color: $btn-font-color;
+}
+
+.btn-submit:hover {
+  background-color: $btn-hover-color;
+  border-color: $btn-hover-color;
+  color: $btn-font-color;
+}
+
+
+input[type=text] {
+  border: $input-border;
+  padding: 10px;
+  background-color: $btn-font-color;
+  border-radius: $border-radius;
+  outline: none;
+  font-size: $btn-font-size;
+  width: $width;
+}
+input[type=email]{
+  @extend input[type=text];
+} 
+input[type=number] {
+  @extend input[type=text];
+} 
+input[type=password]{
+  @extend input[type=text];
+} 
+input[type=tel]{
+  @extend input[type=text];
+} 
+textarea {
+  @extend input[type=text];
+} 
+
+input[type=checkbox] {
+  border: $input-border;
+  padding: 10px;
+  background-color: $btn-font-color;
+  border-radius: $border-radius;
+  outline: none;
+  font-size: $btn-font-size;
+}
+input[type=radio] {
+  @extend input[type=checkbox];
+}
+select{
+  @extend input[type=checkbox];
+}
+
+@media (min-width: 600px) {
+  label {
+    text-align: right;
+    margin-bottom: 5px;
+  }
+
+  .fieldset {
+    display: flex;
+    align-items: center;
+  }
+
+  .nowrap-field {
+    flex-wrap: nowrap;
+  }
+
+  .submit-button-wrapper {
+    text-align: right;
+  }
+}
