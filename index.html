@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="form-wrapper">
+    <div class=container>
+      <form>
+        <div class="row fieldset">
+          <label class="col-6 col-lg-2">名前: </label>
+          <div class="col-6 col-lg-4">
+            <input type="text" name="name">
+          </div>
+        </div>
+        <div class="row fieldset">
+          <label class="col-6 col-lg-2">メールアドレス: </label>
+          <div class="col-6 col-lg-4">
+            <input type="email" name="email">
+          </div>
+        </div>
+        <div class="row fieldset">
+          <label class="col-6 col-lg-2">パスワード: </label>
+          <div class="col-6 col-lg-4">
+            <input type="password" name="password">
+          </div>
+        </div>
+        <div class="row fieldset">
+          <label class="col-6 col-lg-2">性別: </label>
+          <div class="col-6 col-lg-4">
+            <div class="radio-button col-6 col-lg-6">
+              <input type="radio" name="gender" id="gender-male">
+              <label for="gender-male">男性</label>
+            </div>
+            <div class="radio-button col-6 col-lg-6">
+              <input type="radio" name="gender" id="gender-female">
+              <label for="gender-female">女性</label>
+            </div>
+          </div>
+        </div>
+        <div class="row fieldset">
+          <label class="col-6 col-lg-2">出身地: </label>
+          <div class="col-6 col-lg-4">
+            <select name="place">
+              <option value="tokyo">東京都</option>
+              <option value="kanagawa">神奈川県</option>
+              <option value="osaka">大阪府</option>
+            </select>
+          </div>
+        </div>
+        <div class="row fieldset">
+          <label class="col-6 col-lg-2">電話番号: </label>
+          <div class="col-6 col-lg-4">
+            <input type="tel" name="tel">
+          </div>
+        </div>
+        <div class="row fieldset">
+          <label class="col-6 col-lg-2">自己紹介: </label>
+          <div class="col-6 col-lg-4">
+            <textarea name="bio" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-lg-6 submit-button-wrapper">
+            <button type="submit" class="btn btn-submit">登録する</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
