@@ -37,13 +37,15 @@ select {
   background-color: $btn-bg-color;
   border-color: $btn-bg-color;
   color: $btn-font-color;
+  
+    &:hover {
+    background-color: $btn-hover-color;
+    border-color: $btn-hover-color;
+    color: $btn-font-color;
+  }
 }
 
-.btn-submit:hover {
-  background-color: $btn-hover-color;
-  border-color: $btn-hover-color;
-  color: $btn-font-color;
-}
+
 
 
 input[type=text] {
